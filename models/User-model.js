@@ -30,9 +30,9 @@ const UserSchema = new mongoose.Schema({
     type: ObjectID,
     ref: "Recipe"
   }],
-  // isAdmin:{
-  //   type: Boolean
-  // }
+  isAdmin:{
+    type: Boolean
+  }
 });
 
 UserSchema.methods = {

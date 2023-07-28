@@ -18,7 +18,7 @@ const router = Router();
   });
 
 
-  router.get("/create-quantity", (req, res) =>{
+  router.get("/get-quantity", (req, res) =>{
     Quantity.find().populate('product').exec((err, data) => {
       if (err) {
         console.log('ERROR',err);
